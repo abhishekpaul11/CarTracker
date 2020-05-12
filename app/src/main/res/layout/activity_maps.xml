@@ -1,0 +1,442 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MapsActivity"
+    tools:layout="@layout/activity_maps">
+
+    <ImageView
+        android:id="@+id/smoke2"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="35dp"
+        app:layout_constraintStart_toEndOf="@+id/smoke"
+        app:layout_constraintTop_toBottomOf="@+id/carTemp2"
+        app:srcCompat="@drawable/tick" />
+
+    <ImageView
+        android:id="@+id/parking2"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="35dp"
+        app:layout_constraintStart_toEndOf="@+id/parking"
+        app:layout_constraintTop_toBottomOf="@+id/batTemp2"
+        app:srcCompat="@drawable/tick" />
+
+    <TextView
+        android:id="@+id/voltage2"
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:background="@android:color/transparent"
+        android:gravity="center_horizontal"
+        android:text="0 V"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_dark"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/voltage"
+        app:layout_constraintTop_toBottomOf="@+id/rpm" />
+
+    <TextView
+        android:id="@+id/distance2"
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="18dp"
+        android:background="@android:color/transparent"
+        android:gravity="center_horizontal"
+        android:text="0.00\nkms"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_dark"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/distance"
+        app:layout_constraintTop_toBottomOf="@+id/current2" />
+
+    <TextView
+        android:id="@+id/batTemp2"
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="23dp"
+        android:background="@android:color/transparent"
+        android:gravity="center_horizontal"
+        android:text="0 ˚C"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_dark"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/batTemp"
+        app:layout_constraintTop_toBottomOf="@+id/distance2" />
+
+    <TextView
+        android:id="@+id/laps2"
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="38dp"
+        android:background="@android:color/transparent"
+        android:gravity="center_horizontal"
+        android:text="0"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_dark"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/laps"
+        app:layout_constraintTop_toBottomOf="@+id/smoke2" />
+
+    <TextView
+        android:id="@+id/lapTime2"
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="39dp"
+        android:background="@android:color/transparent"
+        android:gravity="center_horizontal"
+        android:text="0 m 00 s"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_dark"
+        android:textSize="23sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/lapTime"
+        app:layout_constraintTop_toBottomOf="@+id/parking2" />
+
+    <TextView
+        android:id="@+id/carTemp2"
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="38dp"
+        android:background="@android:color/transparent"
+        android:gravity="center_horizontal"
+        android:text="0 ˚C"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_dark"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/carTemp"
+        app:layout_constraintTop_toBottomOf="@+id/batLvl2" />
+
+    <TextView
+        android:id="@+id/current2"
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="21dp"
+        android:background="@android:color/transparent"
+        android:gravity="center_horizontal"
+        android:text="0 A"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_dark"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/current"
+        app:layout_constraintTop_toBottomOf="@+id/speed" />
+
+    <TextView
+        android:id="@+id/batLvl2"
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="30dp"
+        android:background="@android:color/transparent"
+        android:gravity="center_horizontal"
+        android:text="0 %"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_dark"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/batLvl"
+        app:layout_constraintTop_toBottomOf="@+id/voltage2" />
+
+    <ImageView
+        android:id="@+id/voltage"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginLeft="44dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rpm"
+        app:srcCompat="@drawable/battery_voltge" />
+
+    <ImageView
+        android:id="@+id/lapTime"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="140dp"
+        android:layout_marginLeft="140dp"
+        android:layout_marginTop="15dp"
+        app:layout_constraintStart_toEndOf="@+id/laps"
+        app:layout_constraintTop_toBottomOf="@+id/parking"
+        app:srcCompat="@drawable/laptime" />
+
+    <ImageView
+        android:id="@+id/parking"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="140dp"
+        android:layout_marginLeft="140dp"
+        android:layout_marginTop="15dp"
+        app:layout_constraintStart_toEndOf="@+id/smoke"
+        app:layout_constraintTop_toBottomOf="@+id/batTemp"
+        app:srcCompat="@drawable/parking" />
+
+    <ImageView
+        android:id="@+id/batTemp"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="140dp"
+        android:layout_marginLeft="140dp"
+        android:layout_marginTop="15dp"
+        app:layout_constraintStart_toEndOf="@+id/carTemp"
+        app:layout_constraintTop_toBottomOf="@+id/distance"
+        app:srcCompat="@drawable/battery_temp" />
+
+    <ImageView
+        android:id="@+id/current"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="140dp"
+        android:layout_marginLeft="140dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintStart_toEndOf="@+id/voltage"
+        app:layout_constraintTop_toBottomOf="@+id/speed"
+        app:srcCompat="@drawable/current" />
+
+    <ImageView
+        android:id="@+id/distance"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="140dp"
+        android:layout_marginLeft="140dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toEndOf="@+id/batLvl"
+        app:layout_constraintTop_toBottomOf="@+id/current"
+        app:srcCompat="@drawable/distance" />
+
+    <ImageView
+        android:id="@+id/laps"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginLeft="44dp"
+        android:layout_marginTop="15dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/smoke"
+        app:srcCompat="@drawable/lap" />
+
+    <ImageView
+        android:id="@+id/smoke"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginLeft="44dp"
+        android:layout_marginTop="15dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/carTemp"
+        app:srcCompat="@drawable/fire" />
+
+    <ImageView
+        android:id="@+id/batLvl"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginLeft="44dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/voltage"
+        app:srcCompat="@drawable/battery_level" />
+
+    <ImageView
+        android:id="@+id/carTemp"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginLeft="44dp"
+        android:layout_marginTop="15dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/batLvl"
+        app:srcCompat="@drawable/car_temp" />
+
+    <TextView
+        android:id="@+id/rpmVal"
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="5dp"
+        android:text="0"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/map" />
+
+    <TextView
+        android:id="@+id/spd"
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:text="0"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/rpmVal"
+        app:layout_constraintTop_toBottomOf="@+id/map" />
+
+    <TextView
+        android:id="@+id/motor"
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:text="0"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/spd"
+        app:layout_constraintTop_toBottomOf="@+id/map" />
+
+    <TextView
+        android:id="@+id/gear"
+        android:layout_width="45dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="5dp"
+        android:text="0"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/motor"
+        app:layout_constraintTop_toBottomOf="@+id/map" />
+
+    <TextView
+        android:id="@+id/speed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="54dp"
+        android:layout_marginLeft="54dp"
+        android:layout_marginBottom="352dp"
+        android:text="KM/H"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/rpm"
+        app:layout_constraintTop_toBottomOf="@+id/spd"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/speed2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="54dp"
+        android:layout_marginLeft="54dp"
+        android:layout_marginBottom="352dp"
+        android:text="MOTOR"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/speed"
+        app:layout_constraintTop_toBottomOf="@+id/spd"
+        app:layout_constraintVertical_bias="0.052" />
+
+    <TextView
+        android:id="@+id/speed3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="38dp"
+        android:layout_marginLeft="38dp"
+        android:layout_marginBottom="352dp"
+        android:text="GEAR"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/speed2"
+        app:layout_constraintTop_toBottomOf="@+id/spd"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/rpm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="52dp"
+        android:layout_marginLeft="52dp"
+        android:layout_marginBottom="352dp"
+        android:text="WHEEL"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rpmVal"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="0dp"
+        android:layout_height="390dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        tools:context=".MapsActivity" />
+
+    <ImageView
+        android:id="@+id/line"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginBottom="30dp"
+        android:background="#ffffffff"
+        app:layout_constraintBottom_toBottomOf="@+id/map"
+        app:layout_constraintStart_toStartOf="@+id/map"
+        app:srcCompat="@drawable/line" />
+
+    <Button
+        android:id="@+id/line1"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginBottom="30dp"
+        android:background="@android:color/transparent"
+        app:layout_constraintBottom_toBottomOf="@+id/map"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
